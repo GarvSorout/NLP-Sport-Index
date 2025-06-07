@@ -1,7 +1,7 @@
 # Football Analysis Project
 
 ## Introduction
-The goal of this project is to detect and track players, referees, and footballs in a video using YOLO, one of the best AI object detection models available. We will also train the model to improve its performance. Additionally, we will assign players to teams based on the colors of their t-shirts using Kmeans for pixel segmentation and clustering. With this information, we can measure a team's ball acquisition percentage in a match. We will also use optical flow to measure camera movement between frames, enabling us to accurately measure a player's movement. Furthermore, we will implement perspective transformation to represent the scene's depth and perspective, allowing us to measure a player's movement in meters rather than pixels. Finally, we will calculate a player's speed and the distance covered. After the YOLO analysis, annoated video and logs of detected events (Passes, Goals, Pressure, Posession Chage) are embedded into a FAISS index for NLP-based similarity search of the video
+The goal of this project is to detect and track players, referees, and footballs in a video using YOLO, one of the best AI object detection models available. I will also train the model to improve its performance. Additionally, I will assign players to teams based on the colors of their t-shirts using Kmeans for pixel segmentation and clustering. With this information, I can measure a team's ball acquisition percentage in a match. I will also use optical flow to measure camera movement between frames, enabling me to accurately measure a player's movement. Furthermore, I will implement perspective transformation to represent the scene's depth and perspective, allowing me to measure a player's movement in meters rather than pixels. Finally, I will calculate a player's speed and the distance covered. After the YOLO analysis, annoated video and logs of detected events (Passes, Goals, Pressure, Posession Chage) are embedded into a FAISS index for NLP-based similarity search of the video.
 
 ![Screenshot](output_videos/screenshot.png)
 
@@ -12,6 +12,7 @@ The following modules are used in this project:
 - Optical Flow: Measure camera movement
 - Perspective Transformation: Represent scene depth and perspective
 - Speed and distance calculation per player
+- FAISS index and embeddigs for captions
 
 ## Trained Models
 - [Trained Yolo v5](https://drive.google.com/file/d/1DC2kCygbBWUKheQ_9cFziCsYVSRw6axK/view?usp=sharing)
